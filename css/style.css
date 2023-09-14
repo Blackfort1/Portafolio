@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 2%;
+}
+
+li,
+a,
+p,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 10%;
+    align-items: center;
+    /*margin-bottom: -100px;*/
+}
+
+.imagen {
+    background-image: linear-gradient(rgba(35, 35, 34, 0.3), rgb(0, 0, 0)),
+        url("/css/fondo.jpg");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 1%;
+}
+
+.imagen p {
+
+    color: aliceblue;
+    position: relative;
+    /* darle permiso de moverse como plazca*/
+    top: 30%;
+    /* posicion del contenedor*/
+    width: 50%;
+    /* agrandas el contenedor*/
+    height: 200px;
+    /* altura del contendor*/
+    left: 500px;
+    /* alargas el contedor*/
+
+}
+
+.mifoto {
+
+    margin-top: -40%;
+    width: 350px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border-radius: 1%;
+}
+
+body {
+    background: rgb(0, 0, 0);
+}
+
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    /*hacer que las palabras esten una al lado de otra*/
+    display: inline-block;
+    /*hacer las separaciones de arriba y al lado de los nav*/
+    padding: 10px 10px;
+}
+
+.nav__links li a {
+    /*transicion de las etiquetas "a" dentro de "li" cuando se coloque el mouse encima*/
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    /*color el cual se tranformaran las etiquetas "li" cuando se coloque el mouse encima*/
+    color: #0088a9;
+}
+
+button {
+    margin-left: 20px;
+    /*primero es el relleno  y luego lo ancho*/
+    padding: 10px 25px;
+    /*color el cual el contenedor sera rellenado*/
+    background-color: rgba(0, 136, 169, 1);
+    /*bordes*/
+    border:none;
+    /*los pixeles lo cual se hara rendondo*/
+    border-radius: 50px;
+    /*que el cursor cambie al ponerse arriba del boton*/
+    cursor: pointer;
+    /*transicion del boton cuando se coloque el mouse encima*/
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(6, 44, 53);
+}
+
+header p {
+    margin-right: auto;
+}
